@@ -1,127 +1,27 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Utama</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
-    <style>
-        /* CSS yang Anda berikan */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(120deg, #133E87, #608BC1 );
-            color: #ffffff;
-        }
-
-        .navbar {
-            width: 100%;
-            margin: auto;
-            display: flex;
-            position: sticky;
-            position: -webkit-sticky;
-            top: 0;
-            background-color: #3880be;
-        }
-
-        .nav-link {
-            font-weight: bold;
-            color: #ffffff; /* Mengatur warna teks link navbar */
-            text-decoration: none; /* Menghilangkan garis bawah */
-            padding: 10px 15px; /* Menambahkan padding */
-        }
-
-        .container {
-            padding-top: 80px;
-            font-size: 30px;
-            text-align: center; /* Menyelaraskan teks ke tengah */
-        }
-
-        .img-Karikatur {
-            width: 20%;
-            max-width: 100%;
-            height: auto;
-            margin: 0;
-            animation: slideInLeft 3s ease forwards;
-            opacity: 0;
-        }
-
-        @media (min-width: 768px) {
-            .flex-wrap-reverse {
-                flex-wrap: wrap-reverse;
-            }
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .animate-float {
-            animation: float 3s ease-out;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .fade-in-left {
-            animation: fadeInLeft 1s ease forwards;
-        }
-
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-100%);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profi.css">
+    <link rel="stylesheet" href="materi.css">
+     <!-- Link ke file CSS -->
 </head>
-
 <body>
     <nav class="navbar">
-        <a href="#" class="nav-link">Beranda</a>
-        <a href="#" class="nav-link">Tentang</a>
-        <a href="#" class="nav-link">Kontak</a>
+        <a href="index.html" class="nav-link">beranda</a>
+        <a href="materi.html" class="nav-link">materi</a>
+        <a href="hitung.html" class="nav-link">hitung</a>
+        <a href="profi.html" class="nav-link">profil</a>
     </nav>
-
     <div class="container">
-        <h1 class="animate-float">Selamat Datang di Website Kami</h1>
-        <img src="c:\Users\asus1\Downloads\isometric-maths-material-background_23-2148146102-ai-brush-removebg-v0xowx4j.png" alt="Karikatur" class="img-Karikatur fade-in-left">
+        <section id="beranda">
+            <h1 class="animate-float">WELCOME TO CALCUMATH</h1>
+            <img src="c:\Users\asus1\Downloads\isometric-maths-material-background_23-2148146102-ai-brush-removebg-v0xowx4j.png" alt="Karikatur" class="img-Karikatur fade-in-left">
+        </section>
     </div>
 </body>
-
 </html>
